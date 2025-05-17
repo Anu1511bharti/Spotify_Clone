@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function getConfirmation(){
+            var retval = confirm("Do you want to continue ?");
+            if( retval == true){
+                document.write ("user want to continue!"); return true;
+            }else{
+                document.write ("user does not want to continue!"); return false;
+            } 
+        }
+
+    </script>
+</head>
+<body>
+    <p>click  the following button to see the result</p>
+    <form >
+        <input type="button" value="Click me" onclick="getConfirmation();">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+var retval = confirm("Do you want to continue ?");
+if( retval == true){
+    document.write ("user want to continue!"); return true;
+}else{
+    document.write ("user does not want to continue!"); return false;
+}
